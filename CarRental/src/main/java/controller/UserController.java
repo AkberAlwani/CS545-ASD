@@ -136,9 +136,6 @@ public class UserController extends Application implements Initializable {
 				System.out.println(user.isAdmin());
 				if (userId > 0) {
 					user.setSysuserId(userId);
-					/*
-					 * if (user.isAdmin()) { isAdminChkBox.setSelected(true); }
-					 */
 				}
 				user.setFirstName(firstName);
 				user.setMiddleName(middleName);

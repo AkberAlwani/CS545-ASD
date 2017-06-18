@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="650.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+  <children>
+    <AnchorPane layoutX="-4.0" layoutY="122.0">
+      <children>
+        <TabPane id="tbcheckout" layoutX="17.0" layoutY="-30.0" prefHeight="465.0" prefWidth="873.0" style="-fx-border-color: orange; -fx-border-width: 3px;" tabClosingPolicy="UNAVAILABLE">
+          <tabs>
+            <Tab fx:id="tbCheckout" text="User">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="430.0" prefWidth="620.0">
+                  <children>
+                    <Button id="btnCancel" layoutX="408.0" layoutY="379.0" mnemonicParsing="false" onAction="#btnCancel" prefHeight="37.0" prefWidth="97.0" style="-fx-border-color: red;" text="Clear" textFill="#cd2323" />
+                    <GridPane layoutX="19.0" layoutY="32.0" prefHeight="332.0" prefWidth="585.0" style="-fx-background-color: #e2e1d7; -fx-background-radius: 5px;" AnchorPane.bottomAnchor="66.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="263.0" AnchorPane.topAnchor="32.0">
+                      <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="142.0" text="First Name">
+                         </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="142.0" text="Middle Name" GridPane.rowIndex="1">
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="142.0" text="Last Name" GridPane.rowIndex="2">
+                                
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="142.0" text="User Name" GridPane.rowIndex="3">
+                                 
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="142.0" text="Password" GridPane.rowIndex="4">
+                                 
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="142.0" text="Confirm Password" GridPane.rowIndex="5">
+                                
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="142.0" text="Is Administrator" GridPane.rowIndex="6">
+                                     
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="142.0" text="Email Address" GridPane.rowIndex="7">
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="142.0" text="Phone " GridPane.rowIndex="8">
+                                       
+                                    </Label>
+                                    <Label fx:id="successMsgLabel" prefHeight="30.0" prefWidth="291.0" textFill="#61bc5a" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <TextField fx:id="txtFirstName" prefHeight="30.0" prefWidth="196.0" promptText="First Name" GridPane.columnIndex="2" />
+                        <TextField id="tstISBN" fx:id="txtMiddleName" prefHeight="30.0" prefWidth="196.0" promptText="Middle Name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <TextField fx:id="txtLastName" prefHeight="31.0" prefWidth="254.0" promptText="Last Name" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <TextField fx:id="txtUsername" prefHeight="31.0" prefWidth="254.0" promptText="User Name" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <PasswordField fx:id="txtPassword" prefHeight="32.0" prefWidth="293.0" promptText="Password" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <PasswordField fx:id="txtConfirmPassword" prefHeight="34.0" prefWidth="293.0" promptText="Confirm Password" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <CheckBox fx:id="isAdminChkBox" mnemonicParsing="false" prefHeight="9.0" prefWidth="72.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <TextField fx:id="txtEmail" prefHeight="31.0" prefWidth="254.0" promptText="Emaiil" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <TextField fx:id="txtPhone" prefHeight="31.0" prefWidth="254.0" promptText="Phone" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                      </children>
+                      <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="124.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="405.0" minWidth="10.0" prefWidth="278.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="405.0" minWidth="10.0" prefWidth="51.0" />
+                      </columnConstraints>
+                      <rowConstraints>
+                        <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="111.0" minHeight="5.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="155.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="140.0" minHeight="6.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="151.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                      </rowConstraints>
+                    </GridPane>
+                    <Label layoutX="19.0" text="User Information" textAlignment="CENTER">
+                      <font>
+                        <Font size="24.0" />
+                      </font>
+                    </Label>
+                    <Button layoutX="531.0" layoutY="379.0" mnemonicParsing="false" onAction="#btnSaveUser" prefHeight="37.0" prefWidth="105.0" style="-fx-border-color: green;" text="Save" textFill="#0c902b" />
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tbView" text="User List">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="userTable" layoutX="68.0" layoutY="24.0" prefHeight="355.0" prefWidth="583.0">
+                                 <columns>
+                                    <TableColumn fx:id="userName" prefWidth="131.0" text="UserName" />
+                                    <TableColumn fx:id="name" prefWidth="137.0" text="Name" />
+                                    <TableColumn fx:id="userEmail" prefWidth="144.0" text="Email" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </children>
+    </AnchorPane>
+    <Label layoutX="380.0" layoutY="560.0" text="Powered by Tigers" textFill="#dd0808">
+      <effect>
+        <Reflection />
+      </effect>
+    </Label>
+  </children>
+</Pane>

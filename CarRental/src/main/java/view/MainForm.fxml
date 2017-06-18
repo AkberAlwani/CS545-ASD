@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="574.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+	<center>
+		<BorderPane prefHeight="672.0" prefWidth="765.0" BorderPane.alignment="CENTER">
+			<center>
+				<HBox alignment="CENTER" focusTraversable="true" prefHeight="634.0" prefWidth="765.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imageview" fitHeight="452.0" fitWidth="762.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bg.jpg" />
+                     </image>
+                  </ImageView>
+               </children></HBox>
+			</center>
+		</BorderPane>
+	</center>
+   <top>
+      <MenuBar fx:id="menubar" BorderPane.alignment="CENTER">
+        <menus>
+				<Menu fx:id="customerMenu" mnemonicParsing="false" text="Customer">
+					<items>
+						<MenuItem fx:id="listCustomersMenu" mnemonicParsing="false" onAction="#listCustomerHandler" text="List Customers" />
+						<MenuItem fx:id="addCustomerMenu" mnemonicParsing="false" onAction="#addCustomerHandler" text="Add Customer" />
+					</items>
+				</Menu>
+				<Menu fx:id="transactionMenu" mnemonicParsing="false" text="Transactions">
+					<items>
+						<MenuItem fx:id="orderMenu" mnemonicParsing="false" onAction="#rentCarHandler" text="Rent Car" />
+						<MenuItem fx:id="returnMenu" mnemonicParsing="false" onAction="#returnCarHandler" text="Return Car" />
+					</items>
+				</Menu>
+            <Menu fx:id="locationMenu" mnemonicParsing="false" text="Location">
+               <items>
+                  <MenuItem fx:id="listLocationMenu" mnemonicParsing="false" onAction="#locationHandler" text="Add/List Location" />
+               </items>
+            </Menu>
+				<Menu fx:id="userMenu" mnemonicParsing="false" text="User Manager">
+					<items>
+						<MenuItem fx:id="mnuListUser" mnemonicParsing="false" onAction="#userManagerHandler" text="Add/List User" />
+					</items>
+				</Menu>
+				<Menu fx:id="carMenu" mnemonicParsing="false" text="Cars">
+					<items>
+						<MenuItem fx:id="listCarsMenu" mnemonicParsing="false" onAction="#listCarHandler" text="List Cars" />
+						<MenuItem fx:id="addCarMenu" mnemonicParsing="false" onAction="#addCarHandler" text="Add Car Detail" />
+					</items>
+				</Menu>
+				<Menu fx:id="systemMenu" mnemonicParsing="false" text="System">
+					<items>
+						<MenuItem fx:id="logoutMenu" mnemonicParsing="false" onAction="#logoutUserHandler" text="Logout" />
+						<MenuItem fx:id="exitMenu" mnemonicParsing="false" onAction="#exitMenuHandler" text="Exit" />
+					</items>
+				</Menu>
+				
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

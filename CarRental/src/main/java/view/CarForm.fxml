@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="398.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CarController">
+  <children>
+    <VBox layoutX="0.0" layoutY="2.0" prefHeight="369.0" prefWidth="659.0">
+      <children>
+        <HBox prefHeight="48.0" prefWidth="329.0">
+          <children>
+            <Label alignment="TOP_RIGHT" contentDisplay="CENTER" prefHeight="26.0" prefWidth="603.0" text="Add/Modify the Vehical Information" textAlignment="RIGHT">
+              <font>
+                <Font name="System Bold" size="17.0" />
+              </font>
+            </Label>
+          </children>
+        </HBox>
+        <HBox prefHeight="42.0" prefWidth="226.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Detail" textAlignment="CENTER" wrappingWidth="181.0">
+              <font>
+                <Font size="19.0" />
+              </font>
+            </Text>
+          </children>
+        </HBox>
+        <HBox prefHeight="105.0" prefWidth="630.0">
+          <children>
+            <VBox prefHeight="105.0" prefWidth="47.0" />
+            <VBox prefHeight="105.0" prefWidth="114.0">
+              <children>
+                <Label prefHeight="26.0" prefWidth="94.0" text="Make *" />
+                <VBox prefHeight="13.0" prefWidth="94.0" />
+                <Label prefHeight="17.0" prefWidth="95.0" text="Model *" />
+                <VBox prefHeight="13.0" prefWidth="94.0" />
+                <Label prefHeight="17.0" prefWidth="94.0" text="Year *" />
+                <VBox prefHeight="13.0" prefWidth="94.0" />
+              </children>
+            </VBox>
+            <VBox prefHeight="105.0" prefWidth="191.0">
+              <children>
+                <TextField fx:id="txtMake" promptText="Make [Manufacturer]" />
+                <VBox prefHeight="9.0" prefWidth="160.0" />
+                <TextField fx:id="txtModel" promptText="Model" />
+                <VBox prefHeight="9.0" prefWidth="160.0" />
+                <TextField id="txtPhone" fx:id="txtYear" promptText="Make Year" />
+                <VBox prefHeight="9.0" prefWidth="160.0" />
+              </children>
+            </VBox>
+            <VBox prefHeight="107.0" prefWidth="17.0" />
+            <VBox prefHeight="102.0" prefWidth="117.0">
+              <children>
+                <Label prefHeight="26.0" prefWidth="113.0" text="Color" />
+                <VBox prefHeight="8.0" prefWidth="82.0" />
+                <Label prefHeight="25.0" prefWidth="83.0" text="Plate *" />
+                <VBox prefHeight="10.0" prefWidth="82.0" />
+                        <Label prefHeight="20.0" prefWidth="92.0" text="Mileage" />
+              </children>
+            </VBox>
+            <VBox prefHeight="108.0" prefWidth="139.0">
+              <children>
+                <TextField fx:id="txtColor" prefHeight="25.0" prefWidth="118.0" promptText="Color" />
+                <VBox prefHeight="10.0" prefWidth="147.0" />
+                <TextField fx:id="txtPlate" prefHeight="26.0" prefWidth="127.0" promptText="Plate *" />
+                <VBox prefHeight="12.0" prefWidth="147.0" />
+                        <TextField fx:id="txtMileage" layoutX="10.0" layoutY="44.0" prefHeight="26.0" prefWidth="127.0" promptText="Mileage" />
+                        <VBox layoutX="10.0" layoutY="70.0" prefHeight="15.0" prefWidth="127.0" />
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="37.0" prefWidth="604.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                             Address Information" wrappingWidth="484.0">
+              <font>
+                <Font size="18.0" />
+              </font>
+            </Text>
+          </children>
+        </HBox>
+        <HBox prefHeight="93.0" prefWidth="659.0">
+          <children>
+            <VBox prefHeight="70.0" prefWidth="55.0" />
+            <VBox prefHeight="82.0" prefWidth="101.0">
+              <children>
+                <Label prefHeight="29.0" prefWidth="79.0" text="Rental Fee" />
+                <VBox prefHeight="5.0" prefWidth="101.0" />
+                <Label prefHeight="21.0" prefWidth="123.0" text="Overdue Fine" />
+                <VBox prefHeight="16.0" prefWidth="93.0" />
+                        <Label prefHeight="21.0" prefWidth="123.0" text="Quantity" />
+              </children>
+            </VBox>
+            <VBox prefHeight="70.0" prefWidth="192.0">
+              <children>
+                <TextField fx:id="txtDailyFee" prefHeight="25.0" prefWidth="178.0" promptText="Daily Fee" />
+                <VBox prefHeight="8.0" prefWidth="192.0" />
+                <TextField fx:id="txtDailyFine" promptText="Daily Fine" />
+                <VBox prefHeight="12.0" prefWidth="192.0" />
+                        <TextField fx:id="txtQuantity" promptText="Quantity" />
+              </children>
+            </VBox>
+            <VBox prefHeight="71.0" prefWidth="18.0" />
+            <VBox prefHeight="70.0" prefWidth="123.0">
+              <children>
+                <VBox prefHeight="12.0" prefWidth="92.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="95.0" text="Auto Gear Box" />
+                           </children></VBox>
+                <VBox prefHeight="6.0" prefWidth="123.0" />
+                        <Label prefHeight="25.0" prefWidth="83.0" text="# Seats" />
+              </children>
+            </VBox>
+            <VBox prefHeight="66.0" prefWidth="148.0">
+              <children>
+                <VBox prefHeight="23.0" prefWidth="155.0">
+                           <children>
+                              <CheckBox fx:id="checkAutoGear" mnemonicParsing="false" prefHeight="8.0" prefWidth="8.0" />
+                           </children></VBox>
+                <VBox prefHeight="15.0" prefWidth="155.0">
+                           <children>
+                              <TextField fx:id="txtSeats" prefHeight="26.0" prefWidth="122.0" promptText="Seats" />
+                           </children></VBox>
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="43.0" prefWidth="659.0">
+          <children>
+            <VBox prefHeight="68.0" prefWidth="463.0" />
+            <VBox prefHeight="68.0" prefWidth="89.0">
+              <children>
+                <Button fx:id="Save" defaultButton="true" mnemonicParsing="false" onAction="#btnSave" prefHeight="25.0" prefWidth="72.0" text="Save" />
+              </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+              <children>
+                <Button fx:id="Cancel" mnemonicParsing="false" onAction="#btnCancel" prefHeight="25.0" prefWidth="72.0" text="Cancel" />
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+    <Text fx:id="txtErrorMessag" layoutX="58.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="568.330396475771" />
+      <ImageView fitHeight="419.0" fitWidth="678.0" layoutY="-1.0" opacity="0.17" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2.jpg" />
+         </image>
+      </ImageView>
+  </children>
+</AnchorPane>
